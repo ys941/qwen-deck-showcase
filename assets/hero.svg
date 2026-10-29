@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#070B16"/><stop offset="1" stop-color="#121A3A"/>
+  </linearGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+  </pattern>
+  <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="60"/></filter>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+<defs>
+  <linearGradient id="title" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#A78BFA"/><stop offset="0.35" stop-color="#22D3EE"/>
+    <stop offset="0.65" stop-color="#FBBF24"/><stop offset="1" stop-color="#A78BFA"/>
+    <animate attributeName="x1" values="0;-1200;0" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="1200;0;1200" dur="12s" repeatCount="indefinite"/>
+  </linearGradient>
+  <linearGradient id="logo" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#8B5CF6"/><stop offset="1" stop-color="#06B6D4"/>
+  </linearGradient>
+  <clipPath id="card"><rect width="1200" height="440" rx="28"/></clipPath>
+</defs>
+<g clip-path="url(#card)">
+  <rect width="1200" height="440" fill="url(#bg)"/>
+  <rect width="1200" height="440" fill="url(#grid)"/>
+  <circle cx="220" cy="90" r="170" fill="#8B5CF6" opacity="0.35" filter="url(#blur)">
+    <animate attributeName="cx" values="220;320;220" dur="14s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1000" cy="360" r="190" fill="#06B6D4" opacity="0.28" filter="url(#blur)">
+    <animate attributeName="cy" values="360;280;360" dur="11s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="900" cy="60" r="120" fill="#F97316" opacity="0.18" filter="url(#blur)">
+    <animate attributeName="cx" values="900;780;900" dur="16s" repeatCount="indefinite"/>
+  </circle>
+  <g transform="translate(564,40)">
+    <rect width="72" height="72" rx="20" fill="url(#logo)"/>
+    <circle cx="36" cy="34" r="17" fill="none" stroke="#fff" stroke-width="5"/>
+    <path d="M44 42 L56 56" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="36" cy="34" r="4" fill="#fff">
+      <animate attributeName="r" values="3;6;3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <text x="600" y="210" text-anchor="middle" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="92" font-weight="800" letter-spacing="-2" fill="url(#title)">QwenDeck</text>
+  <text x="600" y="262" text-anchor="middle" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="600" fill="#F1F5F9">Your own AI. Your desktop. Your calls. One deck.</text>
+  <text x="600" y="302" text-anchor="middle" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="18" fill="#94A3B8">A private AI command centre that acts, researches, reads, coaches and joins your meetings.</text>
+  <g transform="translate(110.0,352)">
+    <rect width="150" height="40" rx="20" fill="#8B5CF6" fill-opacity="0.12" stroke="#8B5CF6" stroke-opacity="0.55"/>
+    <circle cx="24" cy="20" r="5" fill="#8B5CF6">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.4s" begin="0.0s" repeatCount="indefinite"/>
+    </circle>
+    <text x="83.0" y="26" text-anchor="middle" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#E2E8F0">Agents</text>
+  </g>
+  <g transform="translate(276.0,352)">
+    <rect width="150" height="40" rx="20" fill="#6366F1" fill-opacity="0.12" stroke="#6366F1" stroke-opacity="0.55"/>
+    <circle cx="24" cy="20" r="5" fill="#6366F1">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.4s" begin="0.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="83.0" y="26" text-anchor="middle" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#E2E8F0">Research</text>
+  </g>
+  <g transform="translate(442.0,352)">
+    <rect width="150" height="40" rx="20" fill="#06B6D4" fill-opacity="0.12" stroke="#06B6D4" stroke-opacity="0.55"/>
+    <circle cx="24" cy="20" r="5" fill="#06B6D4">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.4s" begin="0.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="83.0" y="26" text-anchor="middle" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#E2E8F0">Documents</text>
+  </g>
+  <g transform="translate(608.0,352)">
+    <rect width="150" height="40" rx="20" fill="#22C55E" fill-opacity="0.12" stroke="#22C55E" stroke-opacity="0.55"/>
+    <circle cx="24" cy="20" r="5" fill="#22C55E">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.4s" begin="1.2000000000000002s" repeatCount="indefinite"/>
+    </circle>
+    <text x="83.0" y="26" text-anchor="middle" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#E2E8F0">Interviews</text>
+  </g>
+  <g transform="translate(774.0,352)">
+    <rect width="150" height="40" rx="20" fill="#F97316" fill-opacity="0.12" stroke="#F97316" stroke-opacity="0.55"/>
+    <circle cx="24" cy="20" r="5" fill="#F97316">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.4s" begin="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="83.0" y="26" text-anchor="middle" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#E2E8F0">Meetings</text>
+  </g>
+  <g transform="translate(940.0,352)">
+    <rect width="150" height="40" rx="20" fill="#EC4899" fill-opacity="0.12" stroke="#EC4899" stroke-opacity="0.55"/>
+    <circle cx="24" cy="20" r="5" fill="#EC4899">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.4s" begin="2.0s" repeatCount="indefinite"/>
+    </circle>
+    <text x="83.0" y="26" text-anchor="middle" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#E2E8F0">Phone</text>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="439" rx="28" fill="none" stroke="#ffffff" stroke-opacity="0.08"/>
+</g>
+</svg>
